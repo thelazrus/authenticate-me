@@ -1,8 +1,9 @@
 'use strict';
 const {
-  Model,
-  Validator
+  Model
 } = require('sequelize');
+
+const validator = require('validator');
 
 const bcrypt = require('bcryptjs');
 
