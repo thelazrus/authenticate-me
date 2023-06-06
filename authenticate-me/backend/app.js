@@ -9,6 +9,7 @@ const { environment } = require('./config');
 const isProduction = environment === 'production';
 const routes = require('./routes');
 const { ValidationError } = require('sequelize');
+const pg = require('pg');
 
 const app = express();
 app.use(morgan('dev'));
